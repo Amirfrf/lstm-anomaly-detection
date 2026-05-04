@@ -1,3 +1,6 @@
+# Generated data (reproducible via generate_data.py)
+data/
+
 # Trained model artifacts
 models/
 

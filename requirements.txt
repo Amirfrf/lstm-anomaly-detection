@@ -1,8 +1,10 @@
 tensorflow==2.21.0
+scikit-learn
 numpy
 pandas
-scikit-learn
+joblib
+kagglehub
 matplotlib
 seaborn
-kagglehub
-joblib
+fastapi
+uvicorn[standard]
