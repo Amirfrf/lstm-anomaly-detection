@@ -4,6 +4,47 @@ Anomaly detection on multivariate sensor data from the [SKAB benchmark](https://
 
 The model is an LSTM autoencoder trained only on normal data. It learns to reconstruct normal sensor patterns. When an anomaly occurs, reconstruction error spikes and that spike is the detection signal. Results are served through a FastAPI backend and visualized in a React dashboard.
 
+## Project Structure
+```
+lstm-anomaly-detection/
+├── assets/
+│   ├── confusion_matrix.png
+│   ├── dashboard.png
+│   ├── model_architecture.png
+│   └── training_curves.png
+├── frontend/
+│   ├── public/
+│   │   ├── favicon.svg
+│   │   └── icons.svg
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   ├── components/
+│   │   │   ├── ErrorChart.jsx
+│   │   │   ├── MetricCard.jsx
+│   │   │   ├── SensorChart.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── README.md
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   └── vite.config.js
+├── .gitignore
+├── Anomaly_Detection.ipynb
+├── LICENSE
+├── README.md
+├── generate_data.py
+├── main.py
+└── requirements.txt
+```
+
 ## Results
 
 | Metric | Score |
@@ -92,4 +133,6 @@ npm run dev
 
 Open `http://localhost:5173` in your browser.
 
-## Project Structure
+
+## License
+MIT
